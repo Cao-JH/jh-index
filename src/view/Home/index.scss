@@ -1,0 +1,14 @@
+#home {
+  display: flex;
+  flex-direction: column;
+
+  header {
+    height: 30vh;
+    background-color: salmon;
+  }
+
+  main {
+    height: 100%;
+    background-color: cadetblue;
+  }
+}
