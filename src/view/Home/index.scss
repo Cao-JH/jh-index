@@ -1,14 +1,28 @@
 #home {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
-  header {
-    height: 30vh;
-    background-color: salmon;
+  section {
+    height: 100vh;
   }
 
-  main {
-    height: 100%;
-    background-color: cadetblue;
+  section:nth-child(1) {
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    aside {
+      height: 100%;
+    }
+  }
+
+  section:nth-child(2) {
+    flex: 1;
+    padding: 20px 20px 20px 0;
+
+    main {
+      height: 100%;
+    }
   }
 }

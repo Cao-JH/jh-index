@@ -1,0 +1,56 @@
+$btnWidth: 80px; // 左右两个按钮宽度
+$inputHeight: 40px; // 高度
+$radius: calc($inputHeight / 2); // 圆角高度
+
+#top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 20px 0;
+
+  .input-container {
+    display: flex;
+    align-items: center;
+    height: $inputHeight;
+    width: 100%;
+
+    .input-left,
+    .input-right {
+      line-height: $inputHeight;
+      width: $btnWidth;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .input-left {
+      border-radius: $radius 0 0 $radius;
+      border-right: 1px solid #ddd;
+    }
+
+    .input-right {
+      border-radius: 0 $radius $radius 0;
+      border-left: 1px solid #ddd;
+    }
+
+    .input-center {
+      flex: 1;
+
+      input {
+        width: 100%;
+        min-width: 200px;
+        height: $inputHeight;
+        display: inline-block;
+        padding: 10px 20px;
+        border: none;
+        font: normal 16px / normal "Times New Roman", Times, serif;
+        color: rgba(61, 111, 130, 1);
+        -o-text-overflow: clip;
+        text-overflow: clip;
+      }
+
+      input:focus {
+        outline: none;
+      }
+    }
+  }
+}
